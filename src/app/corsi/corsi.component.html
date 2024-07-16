@@ -1,0 +1,17 @@
+<div class = "container">
+    <div class = "row">
+        <app-cardsearcher (sendCourseToParent)="onReceiveCourse($event)"></app-cardsearcher>
+    </div>
+
+  <div *ngIf="this.corsoDto.name === null">
+    <div class = "row">
+        <app-corso *ngFor = "let corso of corsi" [corso] = "corso" class = "col-3"></app-corso>
+    </div>
+  </div>
+
+  <div *ngIf = "this.corsoDto.name !== null">
+    <div class = "row">
+      <app-corso [corso] = "this.corsoDto" class = "col-3"></app-corso>
+    </div>
+  </div>
+</div>

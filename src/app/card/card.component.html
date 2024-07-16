@@ -1,0 +1,39 @@
+<div class="card mt-5 mx-auto">
+  <div [ngSwitch] = "categoria.id">
+    <div *ngSwitchCase = "0">
+      <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-info">FrontEnd</h5>
+        <p class="card-text text-center text-info">Diventa FrontEnd Developer</p>
+        <a (click) = "emitCategory()" class="btn btn-outline-info col-12 ms-auto">Inizia</a>
+      </div>
+    </div>
+
+    <div *ngSwitchCase = "1">
+      <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-info">BackEnd</h5>
+        <p class="card-text text-center text-info">Diventa BackEnd Developer</p>
+        <a (click) = "emitCategory()" class="btn btn-outline-info col-12 ms-auto">Inizia</a>
+      </div>
+    </div>
+
+    <div *ngSwitchCase = "2">
+      <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-info">FullStack</h5>
+        <p class="card-text text-center text-info">Diventa FullStack Developer</p>
+        <a (click) = "emitCategory()" class="btn btn-outline-info col-12 ms-auto">Inizia</a>
+      </div>
+    </div>
+
+    <div *ngSwitchCase = "3">
+      <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center text-info">Cybersecurity</h5>
+        <p class="card-text text-center text-info">Immergiti nella Cybersecurity</p>
+        <a (click) = "emitCategory()" class="btn btn-outline-info col-12 ms-auto">Inizia</a>
+      </div>
+    </div>
+  </div>
+</div>

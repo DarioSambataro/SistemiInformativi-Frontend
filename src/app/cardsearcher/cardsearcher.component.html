@@ -1,0 +1,24 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "col">
+            <h2 class = "text-info text-center"> Scegli il tuo corso</h2>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-4"></div>
+        <div class = "col-4">
+            <div class="container">
+                <nav class="navbar bg-body-dark">
+                    <form #searchForm = "ngForm" (ngSubmit)="search(searchForm)" class="d-flex mx-auto" role="search">
+                        <input class="form-control me-2" type="search" name = "name" [(ngModel)]="this.corsoDto.name" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Vai</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+
+        <div class = "col-4"></div>
+    </div>
+
+</div>
+

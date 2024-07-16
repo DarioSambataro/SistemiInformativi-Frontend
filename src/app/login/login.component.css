@@ -1,0 +1,11 @@
+form {
+    margin-top: 80px;
+}
+
+input {
+    border: 1px solid aqua;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
